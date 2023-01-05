@@ -1,0 +1,12 @@
+
+ HardhatError: HH108: Cannot connect to the network localhost.
+ Please make sure your node is running, and check your internet connection and networks config :
+Solution :  
+
+ solution - your local test node (which you started with npx hardhat node) needs to continue running when you deploy your smart contract.
+
+ In other words, you should:
+
+ Run npx hardhat node in your terminal. Leave the process running.
+ Open a new terminal window.
+ Run npx hardhat run [script-name] --network localhost
